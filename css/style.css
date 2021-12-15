@@ -1,12 +1,3 @@
-:root {
-    --color-white: #FFFFFF;
-    --color-dark-white: #E5E5E5;
-    --color-brown: #635854;
-    --color-gray: #D7D7D7;
-    --color-blue: #3596F5;
-    --color-red: #f51111;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +6,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
@@ -27,14 +18,10 @@ body {
 }
 
 .header {
-    padding: 10px 0 15px 0;
-    background-color: var(--color-brown);
-    color: var(--color-white);
-    border-bottom: 4px solid var(--color-blue);
-}
-
-.header a {
-    text-decoration: none;
+    padding: 30px 0 40px 0;
+    background-color: #635854;
+    color: #FFFFFF;
+    border-bottom: 4px solid #3596F5;
 }
 
 .header .container {
@@ -43,8 +30,12 @@ body {
     align-items: center;
 }
 
+.header a {
+    text-decoration: none;
+}
+
 .header__logo {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .header__menu ul {
@@ -54,29 +45,28 @@ body {
     align-items: center;
 }
 
-.header__menu li:not(:last-child) {
+.header__menu ul li:not(:last-child) {
     margin-bottom: 15px;
 }
 
-.header__menu li:last-child {
+.header__menu ul li:last-child {
     margin-bottom: 35px;
 }
 
-.header__menu li a {
-    text-decoration: none;
-    color: var(--color-white);
-}
-
-.header__menu li:first-child {
-    background-color: var(--color-blue);
+.header__menu ul li:first-child {
+    background-color: #3596F5;
     padding: 10px;
     border-radius: 5px;
+}
+
+.header__menu ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .header__connect {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
 .header__connect p {
@@ -89,68 +79,97 @@ body {
     font-size: 17px;
     font-weight: 700;
     text-decoration: none;
-    color: var(--color-white);
+    color: #FFFFFF;
 }
 
-.main {
-    background-color: var(--color-white);
-    padding: 30px 0;
+.choose-appartments {
+    padding: 54px 0 95px;
+    background-color: #FFFFFF;
 }
 
-.main__hero {
+.choose-appartments .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main__hero img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+.choose-appartments__scheme {
+    margin-bottom: 40px;
+}
+
+.choose-appartments__scheme .house {
+    max-height: 640px;
+}
+
+.choose-appartments__scheme .house path {
+    cursor: pointer;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+.choose-appartments__scheme .house path:hover {
+    opacity: 1;
+}
+
+.choose-appartments__floor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose-appartments__floor h2 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #635854;
+}
+
+.choose-appartments__floor .counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.choose-appartments__floor .counter span {
+    font-size: 74px;
+    margin-bottom: 20px;
+    color: #635854;
+}
+
+.choose-appartments__floor .counter__up,
+.choose-appartments__floor .counter__down {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.choose-appartments__floor .counter__up {
     margin-bottom: 20px;
 }
 
-.hero__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hero__text h3 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-    color: var(--color-brown);
-}
-
-.hero__text .icon-up {
-    fill: var(--color-blue);
-    margin-bottom: 25px;
-}
-
-.hero__text .icon {
-    fill: var(--color-brown);
-    margin-bottom: 25px;
-}
-
-.hero__text .icon-down {
-    fill: var(--color-blue);
-    margin-bottom: 30px;
+.choose-appartments__floor .counter__down {
     transform: rotate(180deg);
 }
 
-.hero__text svg:hover {
-    fill: var(--color-red);
+.choose-appartments__floor .counter .icon {
+    fill: #3596F5;
 }
 
-.hero__text button {
+.choose-appartments__floor .counter .icon:hover {
+    fill: #f51111;
+}
+
+.choose-appartments__floor--look {
     width: 297px;
     height: 51px;
     padding: 16px 36px;
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    background-color: #3596F5;
+    color: #FFFFFF;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -171,9 +190,9 @@ body {
 
 .footer {
     padding: 50px 0 56px 0;
-    background-color: var(--color-gray);
-    border-top: 4px solid var(--color-blue);
-    color: var(--color-brown);
+    background-color: #D7D7D7;
+    border-top: 4px solid #3596F5;
+    color: #635854;
 }
 
 .footer .container {
@@ -206,7 +225,7 @@ body {
     font-weight: 700;
     text-decoration: none;
     margin-top: 5px;
-    color: var(--color-brown);
+    color: #635854;
 }
 
 .footer__contacts ul {
@@ -215,26 +234,26 @@ body {
     margin-bottom: 20px;
 }
 
-.footer__contacts li:not(:last-child) {
+.footer__contacts ul li:not(:last-child) {
     margin-bottom: 15px;
     margin-right: 15px;
 }
 
-.footer__contacts ul a {
+.footer__contacts ul li a {
     text-decoration: none;
     display: flex;
 }
 
-.footer__contacts .icon {
+.footer__contacts ul .icon {
     width: 20px;
     height: 20px;
     transition-property: fill;
     transition-duration: 0.3s;
-    fill: var(--color-brown);
+    fill: #635854;
 }
 
-.footer__contacts .icon:hover {
-    fill: var(--color-red);
+.footer__contacts ul .icon:hover {
+    fill: #f51111;
 }
 
 .footer__links {
@@ -248,14 +267,14 @@ body {
     margin-bottom: 10px;
 }
 
-.footer__links a {
+.footer__links li a {
     display: flex;
     text-align: center;
-    color: var(--color-brown);
+    color: #635854;
 }
 
-.footer__links a:hover {
-    color: var(--color-blue);
+.footer__links li a:hover {
+    color: #3596F5;
 }
 
 @media only screen and (min-width: 1278px) {
@@ -272,15 +291,15 @@ body {
     .header__menu ul {
         flex-direction: row;
     }
-    .header__menu li:not(:last-child) {
+    .header__menu ul li:not(:last-child) {
         margin-bottom: 0;
         margin-right: 80px;
     }
-    .header__menu li:last-child {
+    .header__menu ul li:last-child {
         margin-bottom: 0;
         margin-right: 110px;
     }
-    .header__menu li:first-child {
+    .header__menu ul li:first-child {
         padding: 9px 16px;
     }
     .header__connect {
@@ -291,41 +310,49 @@ body {
         margin-bottom: 4px;
         text-align: end;
     }
-    .main {
-        padding-top: 54px;
-        padding-bottom: 100px;
-    }
-    .main__hero {
+    .choose-appartments .container {
         flex-direction: row;
     }
-    .main__hero img {
+    .choose-appartments__scheme {
+        width: 734px;
+        height: 640px;
         margin-bottom: 0;
         margin-right: 30px;
     }
-    .hero__text h3 {
+    .choose-appartments__floor h2 {
         font-size: 30px;
         margin-bottom: 110px;
     }
-    .hero__text .icon-up {
-        margin-bottom: 35px;
-    }
-    .hero__text .icon {
-        margin-bottom: 35px;
-    }
-    .hero__text .icon-down {
+    .choose-appartments__floor .counter {
         margin-bottom: 115px;
+    }
+    .choose-appartments__floor .counter span {
+        margin-bottom: 35px;
+    }
+    .choose-appartments__floor .counter__up {
+        margin-bottom: 35px;
+    }
+    .choose-appartments__floor--look {
+        width: 297px;
+        height: 51px;
+        padding: 16px 36px;
+        background-color: #3596F5;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
     }
     .footer .container {
         flex-direction: row;
-    }
-    .footer__logo {
-        margin-right: 37px;
     }
     .footer__contacts {
         flex-direction: row;
     }
     .footer__contacts>a {
         margin-bottom: 0;
+    }
+    .footer__contacts>a img {
+        margin-right: 37px;
     }
     .footer__contacts>span {
         width: 141px;
@@ -336,7 +363,7 @@ body {
         margin-bottom: 0;
         margin-right: 300px;
     }
-    .footer__contacts li:not(:last-child) {
+    .footer__contacts ul li:not(:last-child) {
         margin-bottom: 0px;
     }
     .footer__links {
@@ -346,7 +373,10 @@ body {
         margin-bottom: 0;
         margin-right: 20px;
     }
-    .footer__links a {
+    .footer__links li a {
         text-align: left;
     }
 }
+
+
+/*# sourceMappingURL=style.css.map */
