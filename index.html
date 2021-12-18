@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 15</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
@@ -15,10 +16,17 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="#">
-                <img class="header__logo" src="img/header-logo.svg" alt="header logo" width="120" height="32">
+            <a class="header__logo" href="#">
+                <img src="img/header-logo.svg" alt="logo">
             </a>
             <nav class="header__menu">
+                <button type="button">
+                    <span class="visually-hidden">Главное меню</span>
+                    <svg class="icon" width="30" height="30">
+                        <use xlink:href="sprite.svg#icon-menu">
+                        </use>
+                    </svg>
+                </button>
                 <ul>
                     <li>
                         <a href="#">Подобрать квартиру</a>
@@ -34,10 +42,16 @@
                     </li>
                 </ul>
             </nav>
-            <span class="header__connect">
-               <p>Закажите звонок:</p>
-               <a href="tel:88431234567">8 (843) 123-45-67</a>
-            </span>
+            <div class="header__contacts">
+                <span>Закажите звонок:</span>
+                <a href="tel:88431234567">
+                    <svg class="icon" width="30" height="30">
+                        <use xlink:href="sprite.svg#icon-phone">
+                        </use>
+                    </svg>
+                    <i>8 (843) 123-45-67</i>
+                </a>
+            </div>
         </div>
     </header>
     <main>
@@ -75,18 +89,20 @@
                     <h2>Выберите желаемый этаж</h2>
                     <div class="counter">
                         <button class="counter__up" type="button">
+                            <span class="visually-hidden">кнопка этаж вверх</span>
                             <svg class="icon" width="32" height="20">
                                 <use xlink:href="sprite.svg#icon-chevron"></use>
                             </svg>
                         </button>
                         <span class="counter__number">07</span>
                         <button class="counter__down" type="button">
+                            <span class="visually-hidden">кнопка этаж вниз</span>
                             <svg class="icon" width="32" height="20">
                                 <use xlink:href="sprite.svg#icon-chevron"></use>
                             </svg>
                         </button>
                     </div>
-                    <button class="choose-appartments__floor--look" type="button">
+                    <button type="button">
                         Смотреть квартиры на этаже</button>
                 </div>
             </div>
@@ -99,7 +115,7 @@
                     <img class="footer__logo" src="img/icon-logo.svg" alt="logo" width="65" height="65">
                 </a>
                 <span>
-                    <p>Закажите звонок:</p>
+                    Закажите звонок:
                     <a href="tel:88431234567">8 (843) 123-45-67</a>
                 </span>
                 <ul>
