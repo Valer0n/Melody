@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 15</title>
+    <title>ЖК Мелодия</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,18 +17,20 @@
     <header class="header">
         <div class="container">
             <a class="header__logo" href="#">
-                <img src="img/header-logo.svg" alt="logo">
+                <img src="img/logo.svg" alt="Логотип">
             </a>
             <nav class="header__menu">
-                <button type="button">
-                    <span class="visually-hidden">Главное меню</span>
-                    <svg class="icon" width="30" height="30">
-                        <use xlink:href="sprite.svg#icon-menu">
-                        </use>
-                    </svg>
+                <button class="button-menu" type="button">
+                  <span class="visually-hidden">Главное меню</span>
+                  <svg class="icon icon-menu" width="30" height="30">
+                    <use xlink:href="img/sprite.svg#icon-menu"></use>
+                  </svg>
+                  <svg class="icon icon-close" width="30" height="30">
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                  </svg>
                 </button>
                 <ul>
-                    <li>
+                    <li class="current">
                         <a href="#">Подобрать квартиру</a>
                     </li>
                     <li>
@@ -46,8 +48,7 @@
                 <span>Закажите звонок:</span>
                 <a href="tel:88431234567">
                     <svg class="icon" width="30" height="30">
-                        <use xlink:href="sprite.svg#icon-phone">
-                        </use>
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
                     </svg>
                     <i>8 (843) 123-45-67</i>
                 </a>
@@ -59,113 +60,113 @@
             <div class="container">
                 <div class="choose-appartments__scheme">
                     <svg class="house" width="100%" viewBox="0 0 734 640" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect width="734" height="640" fill="url(#pattern0)"/>
+                        <rect width="734" height="640" fill="url(#pattern0)" />
                         <defs>
                             <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_1_86" transform="translate(-0.00408719) scale(0.0013624 0.0015625)"/>
+                                <use xlink:href="#image0_1_86" transform="translate(-0.00408719) scale(0.0013624 0.0015625)" />
                             </pattern>
-                            <image id="image0_1_86" width="740" height="640" xlink:href="img/house.jpg" />
+                            <image id="image0_1_86" xlink:href="img/house.jpg" />
                         </defs>
-                        <path d="M222 527L442.8 535L512 521.3V543L443.5 562.7L222 551.7V527Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M223 526V501L443.3 504.3L513 501V521L443.7 534L223 526Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M223 500V475H444H513V498L445 505L223 500Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M223 476V451L444.3 447.3L512 454V476H444" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M223 450V424L444.5 420.7L513 431.7V453L444 446.3L223 450Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M222 423V399.3L443 387L514 410V431.3L443 419L222 423Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M222 401V376L444.2 359.7L514 388.3V409L443.7 387.3L222 401Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M222 376V351L444.5 330.7L514 367.3V388L442 359.3L222 376Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M222 350V326L445 301.3L514 345.3V367L444.7 329L222 350Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M222 325V301L444.5 272.3L514 323.3V344L443.7 301.7L222 325Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M221 301V277L443.3 244L514 303.3V323L444 272.3L221 301Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M222 276V252L443.2 217L513 281V302L444.3 243.7L222 276Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M222 252V227L444.3 189L513 259.3V280L444 216L222 252Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M222 226V201L442.8 157.3L513 236.3V259L444 185.7L222 226Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M223 202V177L443 129L513 214V237L442.3 157.7L223 202Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M222 177V152L441.8 100L513 192.3V215L443.3 128.7L222 177Z" fill="#3595F6" fill-opacity="0.75"/>
-                        <path d="M222 152V126L444 69.3L513 171V192L443.7 100.3L222 152Z" fill="#3595F6" fill-opacity="0.75"/>
+                        <path d="M222 532L442.8 540L512 526.3V548L443.5 567.7L222 556.7V532Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M223 531V506L443.3 509.3L513 506V526L443.7 539L223 531Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M223 505V480H444H513V503L445 510L223 505Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M223 481V456L444.3 452.3L512 459V481H444" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M223 455V429L444.5 425.7L513 436.7V458L444 451.3L223 455Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M222 428V404.3L443 392L514 415V436.3L443 424L222 428Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M222 406V381L444.2 364.7L514 393.3V414L443.7 392.3L222 406Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M222 381V356L444.5 335.7L514 372.3V393L442 364.3L222 381Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M222 355V331L445 306.3L514 350.3V372L444.7 334L222 355Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M222 330V306L444.5 277.3L514 328.3V349L443.7 306.7L222 330Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M221 306V282L443.3 249L514 308.3V328L444 277.3L221 306Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M222 281V257L443.2 222L513 286V307L444.3 248.7L222 281Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M222 257V232L444.3 194L513 264.3V285L444 221L222 257Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M222 231V206L442.8 162.3L513 241.3V264L444 190.7L222 231Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M223 207V182L443 134L513 219V242L442.3 162.7L223 207Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M222 182V157L441.8 105L513 197.3V220L443.3 133.7L222 182Z" fill="#3595F6" fill-opacity="0.75" />
+                        <path d="M222 157V131L444 74.3L513 176V197L443.7 105.3L222 157Z" fill="#3595F6" fill-opacity="0.75" />
                     </svg>
                 </div>
                 <div class="choose-appartments__floor">
                     <h2>Выберите желаемый этаж</h2>
                     <div class="counter">
                         <button class="counter__up" type="button">
-                            <span class="visually-hidden">кнопка этаж вверх</span>
+                            <span class="visually-hidden">Кнопка этаж вверх</span>
                             <svg class="icon" width="32" height="20">
-                                <use xlink:href="sprite.svg#icon-chevron"></use>
+                                <use xlink:href="img/sprite.svg#icon-chevron"></use>
                             </svg>
                         </button>
                         <span class="counter__number">07</span>
                         <button class="counter__down" type="button">
-                            <span class="visually-hidden">кнопка этаж вниз</span>
+                            <span class="visually-hidden">Кнопка этаж вниз</span>
                             <svg class="icon" width="32" height="20">
-                                <use xlink:href="sprite.svg#icon-chevron"></use>
+                                <use xlink:href="img/sprite.svg#icon-chevron"></use>
                             </svg>
                         </button>
                     </div>
-                    <button type="button">
-                        Смотреть квартиры на этаже</button>
+                    <button type="button">Смотреть квартиры на этаже</button>
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__contacts">
-                <a href="#">
-                    <img class="footer__logo" src="img/icon-logo.svg" alt="logo" width="65" height="65">
-                </a>
-                <span>
-                    Закажите звонок:
-                    <a href="tel:88431234567">8 (843) 123-45-67</a>
-                </span>
-                <ul>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__contacts">
+                    <a href="#">
+                        <img src="img/standart-stroy.svg" alt="Логотип Стандарт Стройки" width="65" height="65">
+                    </a>
+                    <span>
+                        Закажите звонок:
+                        <a href="tel:88431234567">8 (843) 123-45-67</a>
+                    </span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="visually-hidden">Наша страничка на Facebook</span>
+                                <svg class="icon" width="20" height="20">
+                                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="visually-hidden">Наша страничка на Instagram</span>
+                                <svg class="icon" width="20" height="20">
+                                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="visually-hidden">Наша страничка на Twitter</span>
+                                <svg class="icon" width="20" height="20">
+                                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="visually-hidden">Наша канал на YouTube</span>
+                                <svg class="icon" width="20" height="20">
+                                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer__links">
                     <li>
-                        <a href="#">
-                            <svg class="icon" width="20" height="20">
-                                <use xlink:href="sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                        <span class="visually-hidden">наша страничка на Facebook</span>
+                        <a href="#">Политика конфиденциальности</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <svg class="icon" width="20" height="20">
-                                <use xlink:href="sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                        <span class="visually-hidden">наша страничка на Instagram</span>
+                        <a href="#">Публичная оферта</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <svg class="icon" width="20" height="20">
-                                <use xlink:href="sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                        <span class="visually-hidden">наша страничка на Twitter</span>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg class="icon" width="20" height="20">
-                                <use xlink:href="sprite.svg#icon-youtube"></use>
-                            </svg>
-                        </a>
-                        <span class="visually-hidden">наша страничка на Youtube</span>
+                        <a href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
-            <ul class="footer__links">
-                <li>
-                    <a href="#">Политика конфиденциальности</a>
-                </li>
-                <li>
-                    <a href="#">Публичная оферта</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+        </footer>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
