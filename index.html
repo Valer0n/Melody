@@ -43,13 +43,16 @@
                         <a href="#">Проектная декларация</a>
                     </li>
                 </ul>
-            </nav>
-            <div class="header__contacts">
-                <span>Закажите звонок:</span>
                 <a href="tel:88431234567">
                     <svg class="icon" width="30" height="30">
                         <use xlink:href="img/sprite.svg#icon-phone"></use>
                     </svg>
+                    <i>8 (843) 123-45-67</i>
+                </a>
+            </nav>
+            <div class="header__contacts">
+                <span>Закажите звонок:</span>
+                <a href="tel:88431234567">
                     <i>8 (843) 123-45-67</i>
                 </a>
             </div>
@@ -103,7 +106,7 @@
                             </svg>
                         </button>
                     </div>
-                    <button type="button">Смотреть квартиры на этаже</button>
+                    <button class="button-scheme" type="button">Смотреть квартиры на этаже</button>
                 </div>
             </div>
         </section>
@@ -166,6 +169,37 @@
             </div>
         </footer>
     </main>
+    <div class="modal">
+        <div class="modal__content scheme-modal">
+            <button class="close">
+                <svg class="icon" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <div class="scheme-modal__floor">
+                <h3 class="title">Этаж 7</h3>
+                <img src="img/floor.png" alt="Этаж">
+            </div>
+            <div class="scheme-modal__appartments">
+                <h3 class="title">Выберите квартиру</h3>
+                <ul>
+                    <li>кв. 40, 2 комн. 50 кв. м.</li>
+                    <li>кв. 40, 2 комн. 50 кв. м.</li>
+                    <li>кв. 40, 2 комн. 50 кв. м.</li>
+                    <li>кв. 40, 2 комн. 50 кв. м.</li>
+                    <li class="active">кв. 40, 2 комн. 50 кв. м.</li>
+                    <li>кв. 40, 2 комн. 50 кв. м.</li>
+                    <li>кв. 40, 2 комн. 50 кв. м.</li>
+                    <li>кв. 40, 2 комн. 50 кв. м.</li>
+                    <li>кв. 40, 2 комн. 50 кв. м.</li>
+                    <li>кв. 40, 2 комн. 50 кв. м.</li>
+                </ul>
+                <span>
+                    Квартиры, отмеченные серым, уже выкуплены
+                </span>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
