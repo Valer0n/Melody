@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
     BUTTON_CLOSE_MODAL.addEventListener('click', function() {
         MODAL.classList.remove('modal--open');
     })
+    window.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            MODAL.classList.remove('modal--open');
+        }
+    })
 
 
 });
